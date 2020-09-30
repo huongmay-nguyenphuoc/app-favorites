@@ -1,67 +1,108 @@
 
 
-/* ACCUEIL */
+/* PAGE 1 - ACCUEIL */
 
-* {
-	margin: 0;
-}
+/* Général */
 
+	#Accueil {
+		margin: 0;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		color: #D9B310;
+	}
+	
+	
 
-#headerAccueil {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 60vh;
-	justify-content: flex-end;
-	background-color: grey;
-	padding: 20px;
-}
-
-#mainAccueil {
-	display: flex;
-	justify-content: center;
-	background-color: lightgrey;
-	padding: 20px;
-}
-
-
-.colonne {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	transition: 0,5s;
-	border-style: solid;
-	border: 0px 1px 0 1px rgba (255,0,0, 0);
+/* Header */
+															
+	#headerAccueil {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		background-color: #0B3C5D;
+		flex-grow: 5;
 		
-}
+		font-family: 'Dancing Script', cursive;
+	}
 
-.colonne p {
-	opacity: 0%;
-	transition: 0.5s;
-}
+	#Accueil h1 {
+		font-size: 150px;
+		
+		padding: 20px;
+		border: 2px solid ;
+		animation-name: changement;
+		animation-duration: 5s;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+		
+	}
 
-.logo {
-	display: block;
-	max-width: 200px;
-	width: 50%;
-	border-radius: 50%;
-	filter: grayscale(100%);
-	transition: 0.5s;
-	margin: 0 auto;
-}
+	@keyframes changement {
+		from {color: #D9B310;}
+		to {color: #F0E3B1;}
+	}
 
-.colonne:hover .logo{
-	filter: grayscale(0%);
-}
+	#Accueil h5 {
+		font-size: 25px;
+		text-align: center;
+	}
 
-.colonne:hover {
-	border: 0px 1px 0 1px rgba (255,0,0 0.3);
-}
 
-.colonne:hover p {
-	opacity: 100%;	
-}
+
+
+	/* Main */
+	
+	#mainAccueil {
+		display: flex;
+		justify-content: center;
+		background-color: #1D2731;
+		padding: 20px;
+		flex-grow: 1;
+	}
+
+
+	.colonne {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		transition: 0.5s;
+		border-left-style: solid;
+		border-right-style: solid;
+		border-size: 1px;
+		border-color: rgba(217,179,160, 0);
+		margin: 10px;
+	}
+
+	.colonne p {
+		opacity: 0%;
+		transition: 0.5s;
+		font-family: 'Piazzolla', serif;
+	}
+
+	.logo {
+		display: block;
+		max-width: 200px;
+		width: 50%;
+		border-radius: 50%;
+		filter: grayscale(100%);
+		transition: 0.5s;
+		margin: 0 auto;
+	}
+
+	.colonne:hover {
+		border-color: rgba(217,179,160, 0.8);
+	}
+
+	.colonne:hover .logo{
+		filter: grayscale(0%);
+	}
+
+	.colonne:hover p {
+		opacity: 100%;
+	}
 
 
