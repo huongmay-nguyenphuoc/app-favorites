@@ -3,6 +3,7 @@
 /* Général: sur les deux sections */
 * {
 	margin: 0;
+	
 
 	
 }
@@ -15,7 +16,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		background-color: #1D2731;
+		background-image: url("https://i.postimg.cc/2yZq1k6q/pexels-neosiam-673535.jpg");
+		background-size: 100%;
+		
 		height: 100vh;
 		color: #D9B310;
 	}
@@ -23,24 +26,36 @@
 	
 /* titre */
 															
-	#titre {
+	#titre1 {
 		
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-end;
-		background-color: #0B3C5D;
+		flex-direction: row;
+		
+		align-items: flex-end;
+		background-color: rgba(11,60,93,0.1);
+		
 		flex-grow: 5;
-		padding: 20px;
+		
+		
+		animation-name: appear;
+		animation-duration: 5s;
+		
+		
 		
 		font-family: 'Dancing Script', cursive;
 	}
+	
+	#titre1 div {
+		background-color: rgba(11,60,93,0.5);
+		flex-grow: 1;
+		text-align: center;
+		padding: 20px;
+		
+	}
 
-			h1 {
-				font-size: 150px;
+		#titre1	h1 {
 				
-				padding: 20px;
-				border: 2px solid #D9B310;
+				font-size: 150px;
 				
 				animation-name: glow;
 				animation-duration: 5s;
@@ -52,11 +67,13 @@
 
 			@keyframes glow {
 				from {color: #D9B310;}
-				to {color: #F0E3B1;}
+				to {color: white;}
 			}
 
 			h5 {
+				
 				font-size: 25px;	
+				color: white;
 			}
 
 
@@ -65,12 +82,19 @@
 		justify-content: center;
 		padding: 20px;
 		flex-grow: 1;
+		background-color: rgba(29,39,49,0.9);
+	
+	
 	}
+
+
+
+
+	
 
 			.colonne {
 				display: flex;
 				flex-direction: column;
-				align-items: center;
 				justify-content: center;
 				text-align: center;
 			
@@ -86,18 +110,32 @@
 			.colonne p {
 				opacity: 0%;
 				transition: 0.5s;
+				padding-top: 10px;
 				font-family: 'Piazzolla', serif;
 			}
 
 			.logo {
-				display: block;
+				
 				max-width: 200px;
 				width: 50%;
 				border-radius: 50%;
 				filter: grayscale(100%);
 				transition: 0.5s;
 				margin: 0 auto;
+				
+				
+			animation-name: appear;
+			animation-duration: 7s;
+	
 			}
+			
+			
+			@keyframes appear {
+			from {opacity: 0;}
+			to {opacity:1;}
+			}	
+	
+			
 
 			.colonne:hover {
 				border-color: rgba(217,179,160, 0.8);
@@ -115,4 +153,128 @@
 	
 	/* Section 2 */
 
+#section2 {
+		display: flex;
+		flex-direction: row;
+		height: 100vh;
+		background-color: #F0E3B1;
+	}
+	
+	
+	#titre2 {
+		flex-grow: 6;
+		
+		display:flex;
+		text-align: center;
+		align-items: center;
+		
+	}
+	
+	#titre2 h1 {
+		
+		font-family: 'Dancing Script', cursive;
+		font-size: 100px;
+		color: #0B3C5D;	
+	}
+	
+	
+	#mots h5 {
+		font-family: 'Dancing Script', cursive;
+		color: white;
+		font-size: 60px;
+	}
+	
+	
+	#mots {
+		flex-grow: 1;
+		font-family: 'Piazzolla', serif;
+		background-color: #328CC1;
+		display:flex;
+		flex-direction: column;
+		color: #F0E3B1;
+	
+		
+	}
+	
+	
+	.mot {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	}
+	
+	
+	.texte {
+	max-width: 60%;	
+	text-align: justify;
+	margin: 0 auto;
+	padding: 20px;
+	border-bottom-style: solid;
+	border size: 1px; 
+	border color: white;
+	transition: 0.5s;
+	opacity: 0.7;
+	
+	}
+	
+	
+.texte:hover {
+transform: scale(1.2);
+opacity: 1;
+}	
+	
+
+/* Section 3 */
+#section3 {
+		display: flex;
+		flex-direction: row;
+		height: 100vh;
+		background-image: url("https://i.postimg.cc/2yZq1k6q/pexels-neosiam-673535.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		align-items: center;
+		justify-content: center;
+		
+		color: #D9B310;
+		font-size: 100px;
+		font-family: 'Dancing Script', cursive;
+		
+			animation-name: glow;
+			animation-duration: 5s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+	}
+
+
+#section3 article {
+	flex-grow: 1;
+	text-align: center;
+	height: 20vh;
+}
+
+#section3 h1 {
+	background-color: rgba(11,60,93,0.5);
+	
+}
+
+
+/* FOOTER */
+footer {
+	bottom: 0;
+	background-color: #F0E3B1;
+}
+
+footer img {
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+
+footer img:hover {
+	transform: scale(1.2);
+}
 
