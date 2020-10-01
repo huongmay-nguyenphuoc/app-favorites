@@ -9,18 +9,25 @@
 
 
 nav {
-	display: flex;
-	background-color: #1D2731;
-	justify-content: center;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		background-color: #1D2731;
+		padding: 20px;
 }
-
-
-
 
 .logo {
+		display: block;
 		max-width: 100px;
+		width: 50%;
 		border-radius: 50%;
-		padding: 20px;
+		filter: grayscale(100%);
+		transition: 0.5s;
+		margin: 0 auto;
+	}
 	
-}
+.logo:hover {
+		filter: grayscale(0%);
+		box-shadow: 0 0 10px white;
+	}
 
