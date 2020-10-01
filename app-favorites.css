@@ -1,10 +1,8 @@
 
 
-/* PAGE 1 - ACCUEIL */
-
 /* Général */
 
-	#Accueil {
+	body {
 		margin: 0;
 		height: 100vh;
 		display: flex;
@@ -16,7 +14,7 @@
 
 /* Header */
 															
-	#headerAccueil {
+	header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -27,7 +25,7 @@
 		font-family: 'Dancing Script', cursive;
 	}
 
-	#Accueil h1 {
+	h1 {
 		font-size: 150px;
 		
 		padding: 20px;
@@ -44,7 +42,7 @@
 		to {color: #F0E3B1;}
 	}
 
-	#Accueil h5 {
+	h5 {
 		font-size: 25px;
 		text-align: center;
 	}
@@ -54,7 +52,7 @@
 
 	/* Main */
 	
-	#mainAccueil {
+	main {
 		display: flex;
 		justify-content: center;
 		background-color: #1D2731;
@@ -69,12 +67,13 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		margin: 10px;
+		
 		transition: 0.5s;
 		border-left-style: solid;
 		border-right-style: solid;
 		border-size: 1px;
 		border-color: rgba(217,179,160, 0);
-		margin: 10px;
 	}
 
 	.colonne p {
@@ -97,8 +96,9 @@
 		border-color: rgba(217,179,160, 0.8);
 	}
 
-	.colonne:hover .logo{
+	.colonne:hover .logo {
 		filter: grayscale(0%);
+		box-shadow: 0 0 10px white;
 	}
 
 	.colonne:hover p {

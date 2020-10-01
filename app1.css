@@ -1,0 +1,26 @@
+/* Général */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* NAV */
+
+
+nav {
+	display: flex;
+	background-color: #1D2731;
+	justify-content: center;
+}
+
+
+
+
+.logo {
+		max-width: 100px;
+		border-radius: 50%;
+		padding: 20px;
+	
+}
+
