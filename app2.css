@@ -1,0 +1,69 @@
+/* Général */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+}
+
+/* NAV */
+
+	nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #1D2731;
+			padding: 20px;
+			color: #D9B310;
+			font-size: 20px;
+			
+	}
+
+	nav div {
+		display: flex;
+		align-items: center;
+	}
+
+	#logoReplika {
+			max-width: 100px;
+			width: 20%;
+			border-radius: 50%;
+	}
+
+	.logo {
+			display: block;
+			max-width: 100px;
+			width: 50%;
+			border-radius: 50%;
+			filter: grayscale(100%);
+			transition: 0.5s;
+			margin: 0 auto;
+		}
+		
+	.logo:hover {
+			filter: grayscale(0%);
+			box-shadow: 0 0 10px white;
+		}
+	
+	
+
+/* PRZ */
+	
+	section
+
+	p {
+		background-color: rgba(245,244,239,0.7);
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+	
