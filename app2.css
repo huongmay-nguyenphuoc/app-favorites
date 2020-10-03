@@ -3,7 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Nunito', sans-serif;
+	
 }
 
 /* NAV */
@@ -16,7 +16,7 @@
 			padding: 20px;
 			color: #D9B310;
 			font-size: 20px;
-			
+			font-family: 'Dancing Script', cursive;
 	}
 
 	nav div {
@@ -52,7 +52,7 @@
 	main {
 	display: flex;
 	flex-direction: column;
-		
+	font-family: 'Nunito', sans-serif;	
 	}
 	
 
