@@ -96,23 +96,34 @@ nav {
 /* SECTION 2 */
 #section2 {
 	flex-direction: column;
-	background-color: rgba(223, 220, 215,0.5);
+	background-color: rgba(159,243,235,0.5);
+	background-image: url("https://static.vecteezy.com/system/resources/previews/000/417/922/original/vector-background-design-with-clouds-in-blue-sky.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	justify-content: space-around;
+	color: white;
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 #main2 {
 	justify-content: space-around;
+	height: 70vh;
 }
 
 .bloc2 {
-	flex-grow: 1;
 	justify-content: justify;
 	position: relative;
+	width: 25vw;
+	border-radius: 25px;
+	overflow: hidden;
+	border: 5px solid white;
 }
 
 .image {
 	display: block;
-	width: 100%;
-	height: auto;
+	height: 100%;
+
 }
 
 .overlay {
@@ -121,31 +132,133 @@ nav {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 100%;
-	width: 100%;
 	opacity: 0;
 	transition: .5s ease;
 	align-items: center;
 	justify-content: center;
 	align-content: center;
+	background-color: rgba(159,243,235,1);
+	font-size: 2em;
 }
 
-.texte {
-}
 
 
 .bloc2:hover .overlay {
 	opacity: 1;
 }
 
+.slogan {
+	border-radius: 25px;
+	height: 10vh;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	background-color: rgba(159,243,235,1);
+	color: white;
+	text-align: center;
+	border: 5px solid white;
+}
+
+
+/*SECTION 3*/
+
+#section3 {
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url("https://cdn.pixabay.com/photo/2017/07/28/14/10/background-2548758_960_720.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+#slogan2 {
+	border: 5px solid white;
+	background-color: rgba(159,243,235,0.4);
+}
+
+iframe {
+	border-radius: 25px;
+	border: 5px solid white;
+	transition: 0.5s;
+}
+
+iframe:hover {
+	transform:scale(1.2);
+}
 
 
 /*SECTION 4*/
 
-#downloads {
+#section4 {
+	background-image: url("https://www.dreamhost.com/blog/wp-content/uploads/2016/07/Cloud-Server-Security.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: space-around;
+	align-items: center;
 	flex-direction: column;
 }
 
-.bouton {
-	max-width: 25vw;
+.bloc4 {
+	flex-direction: column;
+	justify-content: space-around;
+	
 }
+
+.bouton2 {
+	border-radius: 10px;
+	max-width: 15vw;
+	box-shadow: 0 0 10px white;
+	opacity: 0.5;
+
+}
+.bouton {
+	max-width: 20vw;
+	
+	animation-name: shake;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+	.bouton:hover {
+		animation: none;
+	}
+
+@keyframes shake {
+	
+	from {transform: rotate(4deg);}
+	to { transform: rotate(-4deg);} 
+	
+}
+
+.bloc42 {
+	width: 80vw;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
+}
+
+
+.bouton2:hover {
+	opacity: 1;
+}
+
+
+/* FOOTER */
+
+footer {
+	bottom: 0;
+	background-color: #F0E3B1;
+}
+
+	footer img {
+		height: 50px;
+		display: block;
+		margin: 0 auto;
+		transition: 0.5s;
+	}
+
+		footer img:hover {
+			transform: scale(1.2);
+		}
