@@ -5,29 +5,81 @@
 	padding: 0;
 }
 
-/* NAV */
+.flex {
+	display: flex;
+}
 
+.section {
+	height: 100vh;
+}
+
+.padding20 {
+	padding: 20px;
+}
+
+/* NAV BARRE */
 
 nav {
-		display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+	background-color: #1D2731;
+	color: #D9B310;
+	font-size: 1.6em;
+	font-family: 'Dancing Script', cursive;
+}
+
+	nav div {
 		align-items: center;
-		justify-content: flex-start;
-		background-color: #1D2731;
-		padding: 20px;
+	}
+
+#logoDaylio {
+	max-width: 100px;
+	width: 20%;
+	border-radius: 50%;
 }
 
 .logo {
-		display: block;
-		max-width: 100px;
-		width: 50%;
-		border-radius: 50%;
-		filter: grayscale(100%);
-		transition: 0.5s;
-		margin: 0 auto;
-	}
-	
-.logo:hover {
+	display: block;
+	max-width: 100px;
+	width: 50%;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	transition: 0.5s;
+	margin: 0 auto;
+}
+
+	.logo:hover {
 		filter: grayscale(0%);
 		box-shadow: 0 0 10px white;
+	}
+
+
+
+#section1 {
+	background-image: url("https://cdn.pixabay.com/photo/2017/07/13/16/16/paper-2500942_960_720.jpg");
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+}
+
+	#section1 h1 {
+		border: 10px solid transparent;
+		padding: 15px;
+		border-image: url("https://picsart.com/i/sticker-mq-star-stars-frame-frames-border-borders-273474581024211") 30 round;
+	}
+
+#section1 h1 {
+
+	font-size: 10em;
+	text-decoration: underline;
+	color: blue;
+}
+
+	#section1 h3 {
+		font-size: 5em;
+		color: deeppink;
 	}
 
