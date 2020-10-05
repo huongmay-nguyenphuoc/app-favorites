@@ -5,62 +5,73 @@
 	padding: 0;
 }
 
-/* NAV */
 
-	nav {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			background-color: #1D2731;
-			padding: 20px;
-			color: #D9B310;
-			font-size: 20px;
-			font-family: 'Dancing Script', cursive;
-			
-	}
+.flex {
+	display: flex;
+}
+
+.section {
+	height: 100vh;
+}
+
+.padding20 {
+	padding: 20px;
+}
+
+
+@keyframes appear {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/* NAV BARRE */
+
+nav {
+	align-items: center;
+	justify-content: space-between;
+	background-color: #1D2731;
+	color: #D9B310;
+	font-size: 1.6em;
+	font-family: 'Dancing Script', cursive;
+}
 
 	nav div {
-		display: flex;
 		align-items: center;
 	}
 
-	#logoIbis {
-			max-width: 100px;
-			width: 20%;
-			border-radius: 50%;
-			padding-left: 5px;
+#logoIbis {
+	max-width: 100px;
+	width: 20%;
+	border-radius: 50%;
+}
+
+.logo {
+	display: block;
+	max-width: 100px;
+	width: 50%;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	transition: 0.5s;
+	margin: 0 auto;
+}
+
+	.logo:hover {
+		filter: grayscale(0%);
+		box-shadow: 0 0 10px white;
 	}
 
-	.logo {
-			display: block;
-			max-width: 100px;
-			width: 50%;
-			border-radius: 50%;
-			filter: grayscale(100%);
-			transition: 0.5s;
-			margin: 0 auto;
-		}
-		
-	.logo:hover {
-			filter: grayscale(0%);
-			box-shadow: 0 0 10px white;
-		}
-	
-	
-	
+
+
+/*SECTION 1*/
 #section1 {
-	height: 100vh;
-	background-image: url("https://i.postimg.cc/8CM3rY5P/pexels-free-creative-stuff-5052361.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: right;
 	font-family: 'Cabin Sketch', cursive;
 	color: black;
-	
-	
+	background-image: url("https://i.postimg.cc/8CM3rY5P/pexels-free-creative-stuff-5052361.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 
@@ -68,9 +79,8 @@
 	font-size: 5em;
 	text-shadow: 0 0 10px white;
 	animation-name: appear;
-	animation-duration: 3s;
-			}
-
+	animation-duration: 5s;
+}
 
 
 #section1 h3 {
@@ -83,20 +93,59 @@
 }
 
 
-#section1 article {
-	padding: 20px;
-	}
-			
-		
-	@keyframes appear {
-	from {opacity: 0;}
-	to {opacity:1;}
-			}
-	
-
-
+/* SECTION 2 */
 #section2 {
-	height: 200vh;
+	flex-direction: column;
 	background-color: rgba(223, 220, 215,0.5);
 }
 
+#main2 {
+	justify-content: space-around;
+}
+
+.bloc2 {
+	flex-grow: 1;
+	justify-content: justify;
+	position: relative;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.texte {
+}
+
+
+.bloc2:hover .overlay {
+	opacity: 1;
+}
+
+
+
+/*SECTION 4*/
+
+#downloads {
+	flex-direction: column;
+}
+
+.bouton {
+	max-width: 25vw;
+}
