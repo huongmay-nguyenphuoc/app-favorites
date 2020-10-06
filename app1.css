@@ -1,292 +1,278 @@
-/* Général */
+/* GENERAL */
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .flex {
-	display: flex;
+    display: flex;
 }
 
 .section {
-	height: 100vh;
+    height: 100vh;
 }
 
 .padding20 {
-	padding: 20px;
+    padding: 20px;
 }
+
+
 
 /* NAV BARRE */
 
 nav {
-
-	align-items: center;
-	justify-content: space-between;
-	background-color: #1D2731;
-	color: #D9B310;
-	font-size: 1.6em;
-	font-family: 'Dancing Script', cursive;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1D2731;
+    color: #D9B310;
+    font-size: 1.6em;
+    font-family: 'Dancing Script', cursive;
 }
 
-	nav div {
-		align-items: center;
-	}
 
-#logoDaylio {
-	max-width: 100px;
-	width: 20%;
-	border-radius: 50%;
-}
+    nav div {
+        align-items: center;
+    }
+
 
 .logo {
-	display: block;
-	max-width: 100px;
-	width: 50%;
-	border-radius: 50%;
-	filter: grayscale(100%);
-	transition: 0.5s;
-	margin: 0 auto;
+    display: block;
+    max-width: 100px;
+    width: 50%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    margin: 0 auto;
 }
 
-	.logo:hover {
-		filter: grayscale(0%);
-		box-shadow: 0 0 10px white;
-	}
+
+    .logo:hover {
+        filter: grayscale(0%);
+        box-shadow: 0 0 10px white;
+    }
 
 
+#logoDaylio {
+    max-width: 100px;
+    width: 20%;
+    border-radius: 50%;
+}
+
+
+
+
+/*SECTION 1*/
 
 #section1 {
-	background-image: url("https://cdn.pixabay.com/photo/2017/07/13/16/16/paper-2500942_960_720.jpg");
-	background-size: cover;
-	justify-content: center;
-	align-items: center;
-	text-align: justify;
-	font-family: 'Amatic SC', cursive;
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/13/16/16/paper-2500942_960_720.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: 'Amatic SC', cursive;
 }
 
 
-.bloc1  {
-	width: 50vw;
+.bloc1 {
+    width: 50vw;
 }
-
-	#section1 h1 {
-		border: 10px solid transparent;
-		padding: 15px;
-		border-image: url("https://picsart.com/i/sticker-mq-star-stars-frame-frames-border-borders-273474581024211") 30 round;
-	}
 
 #section1 h1 {
-
-	font-size: 10em;
-	text-decoration: underline;
-	color: blue;
+    font-size: 10em;
+    text-decoration: underline;
+    color: blue;
 }
 
-	#section1 h3 {
-		font-size: 5em;
-		color: deeppink;
-	}
+#section1 h3 {
+    font-size: 5em;
+    color: deeppink;
+}
+
+.bloc1 img {
+    border-radius: 50%;
+    display: block;
+    max-width: 60%;
+    min-width: 50%;
+    margin: 0 auto;
+}
 
 
 
-	.bloc1 img {
-		border-radius: 50%;
-		display: block;
-		max-width: 60%;
-		min-width: 50%;
-		margin: 0 auto;
-	}
 
 
-	
-	
-
-/*section 2 */
+/*SECTION 2 
+    a. bloc21: bloc haut
+    b. bloc22: bloc bas
+*/
 
 #section2 {
-	flex-direction: column;
-	background-color: #a0ffe6;
-	font-family: 'Sue Ellen Francisco', cursive;
-	font-size: 3em;
-	color: deeppink;
+    flex-direction: column;
+    background-color: #a0ffe6;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 3em;
+    color: deeppink;
 }
 
 .bloc2 {
-
-	height: 50vh;
-	text-align: center;
-	flex-direction: column;
+    flex-direction: column;
+    height: 50vh;
+    text-align: center;
 }
 
-
+/*bloc21*/
 #bloc21 {
-	background-color: #FBEBED;
-	justify-content: space-around;
-	align-content: center;
+    background-color: #FBEBED;
+    justify-content: space-around;
+    align-content: center;
 }
 
 
 #smileys2 img {
-	display: block;
-	max-width: 100px;
-	margin: 0 auto;
-	padding: 20px;
-	border-radius: 25%;
-	opacity: 0.2;
-	transition: 0.5s;
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 25%;
+    opacity: 0.2;
+    transition: 0.5s;
 }
 
 
-		#smileys2 img:hover {
-			box-shadow: 0 0 10px white;
-			background-color: #FBD7E1;
-			opacity: 1;
-		}
+    #smileys2 img:hover {
+        box-shadow: 0 0 10px white;
+        background-color: #FBD7E1;
+        opacity: 1;
+    }
 
-
-
-
-
+/*bloc22*/
 #bloc22 {
-	
-	overflow: hidden;
-	position: relative;
-	height: 40vh;
-	justify-content: center;
-	color: darkblue;
+    overflow: hidden;
+    position: relative;
+    height: 40vh;
+    justify-content: center;
+    color: darkblue;
 }
 
+    #bloc22 img {
+        border-radius: 25px;
+        width: 50%;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+
+    #bloc22:hover {
+        overflow: visible;
+    }
+
+
+        #bloc22:hover img {
+            opacity: 1;
+            box-shadow: 5px 5px 10px grey;
+        }
 
 
 
-	#bloc22 img {
-		border-radius: 25px;
-		width: 50%;
-		position: absolute;
-		top: 25%;
-		left: 25%;
-		opacity: 0.5;
-		transition: 0.5s;
-	}
-
-	#bloc22:hover {
-		overflow: visible;
-		
-	}
-
-
-		#bloc22:hover img {
-			opacity: 1;
-			box-shadow: 0 0 10px white;
-		}
-
-
-
-
+/*SECTION 3*/
 #section3 {
-	flex-direction: column;
-	text-align: center;
-	font-family: 'Sue Ellen Francisco', cursive;
-	font-size: 2em;
-	color: deeppink;
-	background-color: #FBEBED;
-	justify-content:center;
-	align-items: center;
-
-	
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 2em;
+    color: deeppink;
+    background-color: #FBEBED;
+    justify-content: center;
+    align-items: center;
 }
 
 #main3 {
-	height: 80vh;
-	justify-content: space-around;
-	width: 100vw;
-	align-items: center;
+    height: 80vh;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: center;
 }
 
-	#main3 img {
-		display: block;
-		border-radius: 25px;
-		border: 5px solid #FBD7E1;
-		max-height: 60%;
-	}
+    #main3 img {
+        display: block;
+        border-radius: 25px;
+        border: 5px solid #FBD7E1;
+        max-height: 60%;
+    }
 
 
 
 
 
-
+/*SECTION 4 */
 #section4 {
-	background-color: #a0ffe6;
-	justify-content: space-around;
-	align-items: center;
-	font-family: 'Sue Ellen Francisco', cursive;
+    background-color: #a0ffe6;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Sue Ellen Francisco', cursive;
 }
 
-	#section4 article {
-		flex-direction: column;
-		width: 30%;
-		height: 50%;
-		
-		background-color: white;
-		border-radius: 25px;
-	}
+    #section4 article {
+        flex-direction: column;
+        width: 30%;
+        height: 50%;
+        background-color: white;
+        border-radius: 25px;
+    }
 
 
 .logo4 {
-	max-height: 50px;
-	border-radius: 25px;
-	padding: 20px;
-
+    max-height: 50px;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 #section4 span {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #section4 h3 {
-
-	text-align: center;
-	font-size: 2em;
-	color: blue;
+    text-align: center;
+    font-size: 2em;
+    color: blue;
 }
 
 #section4 a {
-	text-decoration: none;
-	font-size: 1.5em;
+    text-decoration: none;
+    font-size: 1.5em;
 }
 
-#section4 a:hover {
-	text-decoration: underline;
-	color: deeppink;
+    #section4 a:hover {
+        text-decoration: underline;
+        color: deeppink;
+    }
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    bottom: 0;
+    background-color: #F0E3B1;
 }
 
+    footer img {
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        transition: 0.5s;
+    }
 
-
-
-
-
-
-
-
-
-		/* FOOTER */
-		footer {
-	bottom: 0;
-	background-color: #F0E3B1;
-}
-
-	footer img {
-		height: 50px;
-		display: block;
-		margin: 0 auto;
-		transition: 0.5s;
-	}
-
-		footer img:hover {
-			transform: scale(1.2);
-		}
-
+        footer img:hover {
+            transform: scale(1.2);
+        }

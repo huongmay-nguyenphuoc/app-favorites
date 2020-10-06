@@ -1,10 +1,16 @@
-/* Général */
+/* GENERAL */
 
 * {
     margin: 0;
     padding: 0;
 }
 
+
+
+main {
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
 
 .flex {
     display: flex;
@@ -19,7 +25,7 @@
 }
 
 
-
+/*Animations*/
 @keyframes typing {
     from {
         width: 0
@@ -53,6 +59,9 @@
     }
 }
 
+
+
+
 /* NAV BARRE */
 
 nav {
@@ -67,12 +76,6 @@ nav {
     nav div {
         align-items: center;
     }
-
-#logoReplika {
-    max-width: 100px;
-    width: 20%;
-    border-radius: 50%;
-}
 
 .logo {
     display: block;
@@ -89,18 +92,19 @@ nav {
         box-shadow: 0 0 10px white;
     }
 
-
-/* MAIN */
-
-main {
-    flex-direction: column;
-    font-family: 'Nunito', sans-serif;
+#logoReplika {
+    max-width: 100px;
+    width: 20%;
+    border-radius: 50%;
 }
 
 
 
 
-/* SECTION 1 */
+/* SECTION 1 
+    a. titre
+    b. sous titre
+*/
 
 #section1 {
     flex-direction: column;
@@ -132,7 +136,10 @@ main {
 
 
 
-/* SECTION 2 */
+/* SECTION 2
+    a. tchat
+    b. barre de réponse
+*/
 
 
 #section2 {
@@ -143,7 +150,7 @@ main {
     background-size: cover;
 }
 
-/*chat*/
+/*tchat*/
 #bulles {
     height: 100vh;
     flex-direction: column;
@@ -159,6 +166,7 @@ main {
         border: 2px solid white;
         font-size: 1em;
     }
+
 
 /*barre de réponse*/
 #barre {
@@ -182,6 +190,7 @@ main {
 
 
 
+
 /*SECTION 3 */
 
 #section3 {
@@ -191,8 +200,7 @@ main {
     padding: 10px;
 }
 
-/*screenshots*/
-#photo img {
+#section3 img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -221,6 +229,7 @@ main {
     height: 80vh;
 }
 
+
 /*bloc gauche*/
 #logo4 {
     width: 50%;
@@ -231,6 +240,8 @@ main {
     #logo4 img {
         width: 50%;
     }
+
+
 
 /*bloc droite */
 #bloc4 {
@@ -278,13 +289,13 @@ footer {
     background-color: #F0E3B1;
 }
 
-footer img {
-    height: 50px;
-    display: block;
-    margin: 0 auto;
-    transition: 0.5s;
+    footer img {
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        transition: 0.5s;
     }
 
-footer img:hover {
-    transform: scale(1.2);
-}
+        footer img:hover {
+            transform: scale(1.2);
+        }
